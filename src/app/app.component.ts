@@ -37,4 +37,6 @@ export class AppComponent {
   });
   
   video = "Lo2qQmj0_h4";
+
+  activar:boolean = true;
 }

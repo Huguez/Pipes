@@ -115,6 +115,16 @@
                 <td> capitalizado:false (Personalizado ) </td>
                 <td>{{ nombreCompleto | capitalizado:false }}</td>
             </tr>
+            <tr>
+                <th scope="row">18</th>
+                <td> {{ nombre }} </td>
+                <td>
+                    password: {{ activar }}
+                    <br>
+                    <button (click)="activar = !activar " type="button" class="btn btn-outline-primary">Activar/Desactivar</button>
+                </td>
+                <td>{{ nombre | password:activar }}</td>
+            </tr>
         </tbody>
     </table>
 
