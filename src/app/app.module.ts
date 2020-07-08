@@ -6,12 +6,13 @@ import { Capitalizado } from './pipes/capitalizado.pipe';
 
 import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
-import localeEs from '@angular/common/locales/es';
+
 import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { PasswordPipe } from './pipes/password.pipe';
+import localize from '@angular/common/locales/es';
 
 // the second parameter 'fr' is optional
-registerLocaleData(localeEs, 'es-MX');
+registerLocaleData(localize, 'es-MX');
 
 
 @NgModule({
